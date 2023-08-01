@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,11 +28,14 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/profile', [PostController::class, 'index'])->name('post.index');
+// functionCompPosts
+Route::get('/posts', [PostController::class, 'functionCompPosts'])->name('post.functionCompPosts');
 
-// Route::get('/posts', function () {
-//     return Inertia::render('Posts/PostComponent');
-// })->name('posts');
+// classCompPosts
+Route::get('/posts/new', [PostController::class, 'classCompPosts'])->name('post.classCompPosts');
+
+// functionCompProducts
+Route::get('/products', [ProductController::class, 'functionCompProducts'])->name('post.functionCompProducts');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
