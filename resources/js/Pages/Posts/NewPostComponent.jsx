@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 export default class NewPostComponent extends Component{
+    
     state={
         name:'Faisal',
         age:24,
@@ -51,7 +52,7 @@ export default class NewPostComponent extends Component{
                 <p>Name : {this.state.name}</p>
                 <p>Age  : {this.state.age}</p>
                 <p>Mobile : {this.state.mobile}</p>
-                <p>Skills : {this.state.skills[0]}</p>
+                <p>Skills : {this.state.skills.join(',')}</p>
 
                 {/* handleClick handleMouseOver Functionalities */}
                 <button type="button" onClick={this.handleClick} onMouseOver={this.handleMouseOver}>Click Here</button>

@@ -7,6 +7,9 @@ use Inertia\Inertia;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ApplianceController;
+use App\Http\Controllers\UseStateHookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +39,15 @@ Route::get('/posts/new', [PostController::class, 'classCompPosts'])->name('post.
 
 // functionCompProducts
 Route::get('/products', [ProductController::class, 'functionCompProducts'])->name('post.functionCompProducts');
+
+// functionCompStudents
+Route::get('/students', [StudentController::class, 'functionCompStudents'])->name('post.functionCompStudents');
+
+// functionCompStudents
+Route::get('/appliance', [ApplianceController::class, 'functionCompAppliance'])->name('post.functionCompAppliance');
+
+// useStateHooks
+Route::get('/use-state-hook', [UseStateHookController::class, 'functionCompuseStateHook'])->name('post.functionCompuseStateHook');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
