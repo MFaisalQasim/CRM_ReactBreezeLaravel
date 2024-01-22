@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import stutent from "../../../images/stutent.jpg"
-
-export default class AddStudentComponent extends Component{
+class AddStudentComponent extends Component{
 
     state={
         name:null,
@@ -51,3 +50,5 @@ export default class AddStudentComponent extends Component{
         )
     }
 }
+
+export default (AddStudentComponent);

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import StudentComponent from "./StudentComponent"
 import AddStudentComponent from "./AddStudentComponent"
+import Coloured from "../../Components/Coloured";
 
 class StudentsComponent extends Component{
 
@@ -52,4 +53,4 @@ class StudentsComponent extends Component{
         )
     }
 }
-export default (StudentsComponent);
+export default Coloured(StudentsComponent);

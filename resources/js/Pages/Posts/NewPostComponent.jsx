@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+// import { withRouter } from "react-router-dom";
+class NewPostComponent extends Component{
 
-export default class NewPostComponent extends Component{
-    
     state={
         name:'Faisal',
         age:24,
@@ -9,9 +9,9 @@ export default class NewPostComponent extends Component{
         skills:['Laravel ',' React ',' Sql ',' Firebase']
     }
 
-    handleClick=(e)=>{
-        console.log("Button Is Click");
-    }
+    // handleClick=(e)=>{
+    //     console.log("Button Is Click");
+    // }
 
     handleMouseOver=(e)=>{
         console.log(e.target, e.pageX, e.pageY);
@@ -74,3 +74,5 @@ export default class NewPostComponent extends Component{
         )
     }
 }
+
+export default (NewPostComponent);
